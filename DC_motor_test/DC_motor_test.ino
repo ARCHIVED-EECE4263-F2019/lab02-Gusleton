@@ -52,7 +52,7 @@ void loop()
                 // is still pressed, indicating an actual press, not a bounce
     //Off to High
     if (digitalRead(13) == HIGH && YellowButtonState == 0){
-      //delay(50);
+      delay(50);
       if (digitalRead(15) == HIGH){
         MotorReset();
         return;
@@ -62,7 +62,7 @@ void loop()
   
     //High to low
     if (digitalRead(13) == HIGH && YellowButtonState == 1){
-      //delay(50);
+      delay(50);
       if (digitalRead(15) == HIGH){
         MotorReset();
         return;
@@ -72,7 +72,7 @@ void loop()
   
     //Low to off
     if (digitalRead(13) == HIGH && YellowButtonState == 2){
-      //delay(50);
+      delay(50);
       if (digitalRead(15) == HIGH){
         MotorReset();
         return;
@@ -87,7 +87,7 @@ void loop()
                 // is still pressed, indicating an actual press, not a bounce
     //Blow away from motor
     if (digitalRead(15) == HIGH && GreenButtonState == 1){
-      //delay(50);
+      delay(50);
       if (digitalRead(13) == HIGH){
         MotorReset();
         return;
@@ -97,7 +97,7 @@ void loop()
   
     //Blow towards motor
     if (digitalRead(15) == HIGH && GreenButtonState == 0){
-      //delay(50);
+      delay(50);
       if (digitalRead(13) == HIGH){
         MotorReset();
         return;

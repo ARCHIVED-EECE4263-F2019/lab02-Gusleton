@@ -86,5 +86,12 @@ void setup() {
 }
 
 void loop() {
-  ; // do nothing
+  debouncer.update();
+  
+  if(debouncer.fell()){
+    Serial.println("Fell");
+  } else {
+    Serial.println("Up");
+  }
+  
 }
